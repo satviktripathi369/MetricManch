@@ -1,7 +1,7 @@
 import './Account.css';
 
 const Account = (props) => {
-    return ( 
+    return (
         <div className="user__account__container">
             <div className="account__container">
                 <div className="account__header">
@@ -12,7 +12,7 @@ const Account = (props) => {
                 </div>
             </div>
         </div>
-     );
+    );
 }
- 
+
 export default Account;

@@ -34,7 +34,7 @@ const DrawerNav = () => {
       style={{ backgroundColor: '#1A1A1A', color: 'white' }}
     >
       <List>
-        {['Home', 'Shop', 'Men', 'Women', 'Kids'].map((text) => (
+        {['Home', 'Shop', 'Men', 'Women', 'Kids', 'Books', 'Sports', 'Kitchen', 'Technology'].map((text) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
               <ListItemText>
