@@ -9,7 +9,7 @@ import TelegramIcon from '@mui/icons-material/Telegram';
 import PinterestIcon from '@mui/icons-material/Pinterest';
 
 const Footer = () => {
-    return ( 
+    return (
         <footer>
             <div className="footer__container">
                 <div className="footer__items__container">
@@ -38,13 +38,13 @@ const Footer = () => {
                         </div>
                         <ul className="footer__contacts">
                             <li className="footer__contact">
-                                <LocalPhoneIcon /> <span>+123 4567 890</span>
+                                <LocalPhoneIcon /> <span>+91 9557008087</span>
                             </li>
                             <li className="footer__contact">
-                                <EmailIcon /> <span>shop@shema.com</span>
+                                <EmailIcon /> <span>metricmanch.com</span>
                             </li>
                             <li className="footer__contact">
-                                <LocationOnIcon /> <span>Addis Ababa, Ethiopia</span>
+                                <LocationOnIcon /> <span>Dehradun, Uttarakhand</span>
                             </li>
                         </ul>
                     </div>
@@ -52,7 +52,7 @@ const Footer = () => {
                         <div className="footer__social__link__header">
                             <h1>Stay Connected</h1>
                         </div>
-                    <ul className="footer__social__links">
+                        <ul className="footer__social__links">
                             <li className="social__link">
                                 <TwitterIcon />
                             </li>
@@ -73,14 +73,14 @@ const Footer = () => {
                 </div>
                 <div className="fotter__copyright__container">
                     <ul className='nav'>
-                        <li className="footer__copyright">©2022 Shema Ltd. |</li>
+                        <li className="footer__copyright">©2024 MetricManch Ltd. |</li>
                         <li className="footer__terms__condition"> | Terms & Condition |</li>
                         <li className="footer__privacy__policy">| Privacy Policy</li>
                     </ul>
-                     </div>
+                </div>
             </div>
         </footer>
-     );
+    );
 }
- 
+
 export default Footer;

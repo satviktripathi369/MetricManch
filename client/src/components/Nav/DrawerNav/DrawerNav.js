@@ -31,13 +31,14 @@ const DrawerNav = () => {
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
+      style={{ backgroundColor: '#1A1A1A', color: 'white' }}
     >
       <List>
         {['Home', 'Shop', 'Men', 'Women', 'Kids'].map((text) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
               <ListItemText>
-                <Link to="/category/men">{text}</Link>
+                <Link to="/category/men" style={{ color: 'white', textDecoration: 'none' }}>{text}</Link>
               </ListItemText>
             </ListItemButton>
           </ListItem>
@@ -62,7 +63,7 @@ const DrawerNav = () => {
   return (
     <Fragment>
       {['left'].map((anchor) => (
-        <Fragment >
+        <Fragment key={anchor}>
           {state.left ? <MenuOpenIcon fontSize='large' /> : <MenuIcon fontSize='large' onClick={toggleDrawer(anchor, true)} />}
           <Drawer
             anchor={anchor}

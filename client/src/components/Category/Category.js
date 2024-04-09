@@ -23,60 +23,60 @@ const Category = (props) => {
         setFilter(event.target.value);
     };
 
-    return ( 
+    return (
         <div className="category__container">
             <div className="category">
                 <div className="category__header__container">
                     <div className="category__header__big">
                         <div className="category__header">
                             <h2>{props.name}</h2>
-                        </div> 
+                        </div>
                         <div className="category__header__line"></div>
                     </div>
                     <div className="category__sort">
                         <div className="show__filter">
-                            <Box sx={{ minWidth: 100} }>
+                            <Box sx={{ minWidth: 100 }}>
                                 <FormControl fullWidth size="small">
                                     <InputLabel>Show</InputLabel>
                                     <Select
-                                    value={show}
-                                    label="Show"
-                                    onChange={handleShowChange}
+                                        value={show}
+                                        label="Show"
+                                        onChange={handleShowChange}
                                     >
                                         <MenuItem value={'All'}>All</MenuItem>
                                     </Select>
                                 </FormControl>
                             </Box>
-                       </div>
-                       <div className="filter__by">
-                       <div className="show__filter">
-                            <Box sx={{ width: 120} }>
-                                <FormControl fullWidth size="small">
-                                    <InputLabel>Filter by</InputLabel>
-                                    <Select
-                                    value={filter}
-                                    label="Filter"
-                                    onChange={handleFilterChange}
-                                    >
-                                        <MenuItem value={'Latest'}>Latest</MenuItem>
-                                    </Select>
-                                </FormControl>
-                            </Box>
+                        </div>
+                        <div className="filter__by">
+                            <div className="show__filter">
+                                <Box sx={{ width: 120 }}>
+                                    <FormControl fullWidth size="small">
+                                        <InputLabel>Filter by</InputLabel>
+                                        <Select
+                                            value={filter}
+                                            label="Filter"
+                                            onChange={handleFilterChange}
+                                        >
+                                            <MenuItem value={'Latest'}>Latest</MenuItem>
+                                        </Select>
+                                    </FormControl>
+                                </Box>
                             </div>
-                       </div>
+                        </div>
                     </div>
                 </div>
                 <div className="category__card__container">
                     <div className="category__product__card">
-                        {props.items.map((data) => <ItemCard item={data} category={props.category}/>)}
+                        {props.items.map((data) => <ItemCard item={data} category={props.category} />)}
                         <div className="show__more__action">
-                            <Button variant='outlined' sx={[ {width: '200px', height: '50px', borderRadius: '20px' , fontWeight: '700', backgroundColor: '#FFE26E', borderColor: '#FFE26E', color: 'black' }, {'&:hover': { borderColor: '#FFE26E', backgroundColor: "none" }}]}>Show more</Button>
+                            <Button variant='outlined' sx={[{ width: '200px', height: '50px', borderRadius: '20px', fontWeight: '700', backgroundColor: '#fff', borderColor: '#9842F1', color: 'black' }, { '&:hover': { borderColor: '#9842F1', backgroundColor: "#9842F1", color: "white" } }]}>Show more</Button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-     );
+    );
 }
- 
+
 export default Category;

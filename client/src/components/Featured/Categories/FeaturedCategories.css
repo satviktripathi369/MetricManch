@@ -1,5 +1,6 @@
 
 .featured__categories__container {
+    background-color: #614d96;
     height: auto;
     width: 100%;
     display: flex;
@@ -27,6 +28,7 @@
 }
 
 .featured__header__big {
+    color: #fff;
     font-size: 2.3rem;
     font-weight: 600;
 }
@@ -38,7 +40,7 @@
 .featured__categories__header__line {
     width: 200px;
     height: 6px;
-    background-color: #FFE26E;
+    background-color: #372248;
     align-self: center;
     border-radius: 25px;
 }
