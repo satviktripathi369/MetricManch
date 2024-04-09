@@ -68,8 +68,8 @@
     height: 60%;
     width: 100%;
     font-size: 1.1rem;
-    background-color: #FFE26E;
-    border-color: #FFE26E;
+    background-color: #9842F1;
+    border-color: #9842F1;
     border-style: dashed;
     font-weight:bold;
 }
@@ -77,4 +77,8 @@
 .login__other__actions {
     height: 20%;
     width: 100%;
+}
+
+.login__forgot__password{
+    cursor:  pointer;
 }
