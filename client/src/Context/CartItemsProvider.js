@@ -5,11 +5,11 @@ const CartItemsProvider = (props) => {
 
     const [cartItems, setCartItems] = useState([])
     const [totalAmountOfItems, setTotalAmountOfItems] = useState(0)
-    
+
     const addToCartHandler = (item, quantity) => {
-        const { _id, name, price, image, category, size} = item;
+        const { _id, name, price, image, category, size } = item;
         removeFromCartHandler(item)
-        setCartItems((prevItems) => [...prevItems, {_id, name, price, image, category, itemQuantity: quantity, size}])
+        setCartItems((prevItems) => [...prevItems, { _id, name, price, image, category, itemQuantity: quantity, size }])
     }
 
     const removeFromCartHandler = (item) => {
@@ -26,9 +26,9 @@ const CartItemsProvider = (props) => {
     }
 
     const quantityHandler = (itemId, action) => {
-        if(action === 'INC'){
+        if (action === 'INC') {
             setCartItems(cartItems.map((item) => {
-                if(item.id  === itemId){
+                if (item.id === itemId) {
                     item.itemQuantity += 1
                 }
                 return item
@@ -36,7 +36,7 @@ const CartItemsProvider = (props) => {
         }
         else {
             setCartItems(cartItems.map((item) => {
-                if(item.id  === itemId){
+                if (item.id === itemId) {
                     item.itemQuantity -= 1
                 }
                 return item
@@ -57,11 +57,11 @@ const CartItemsProvider = (props) => {
         quantity: quantityHandler
     }
 
-    return ( 
+    return (
         <CartItemsContext.Provider value={cartItemCtx}>
             {props.children}
         </CartItemsContext.Provider>
-     );
+    );
 }
- 
+
 export default CartItemsProvider;

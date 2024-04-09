@@ -6,9 +6,9 @@ export const Profile = () => {
 
     TabTitle("My Account - Shema")
 
-    return ( 
+    return (
         <MyAccount />
-     );
+    );
 }
 
 export const AccountManager = () => {
