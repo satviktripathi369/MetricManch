@@ -1,5 +1,6 @@
 
 .featured__products__container {
+    background-color: #614d96;
     width: 100%;
     height: auto;
     min-height: 25rem;
@@ -24,18 +25,20 @@
 }
 
 .featured__items__header__big {
+    color: #fff;
     font-size: 2rem;
     font-weight: 600;
 }
 
 .featured__header__small {
+    color: #fff;
     margin: auto 20px;
 }
 
 .featured__products__header__line {
     width: 150px;
     height: 6px;
-    background-color: #FFE26E;
+    background-color: #372248;
     align-self: flex-start;
     margin-left: 50px;
     border-radius: 25px;

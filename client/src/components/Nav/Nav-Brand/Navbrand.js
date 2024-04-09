@@ -5,7 +5,7 @@ const NavBrand = () => {
     return (
         <div href="#home" className='navbrand__container'>
             <h1 className='navbrand'>
-                <Link to="/">MetricManch</Link>
+                <Link to="/" style={{color: "#fff", marginLeft: '8%'}}>MetricManch</Link>
             </h1>
         </div>
     );
