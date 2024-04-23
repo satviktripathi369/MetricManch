@@ -1,0 +1,247 @@
+{
+    "total_result": 20,
+    "query": "Tech",
+    "fetch_from": "https://www.flipkart.com/search?marketplace=FLIPKART&q=Tech",
+    "result": [
+        {
+            "category": "Headphones",
+            "market": "Flipkart",
+            "product": [
+                {
+                    "curr": "INR",
+                    "original": 3499,
+                    "prices": [
+                        1299,
+                        1299,
+                        1399,
+                        1399,
+                        1499
+                    ],
+                    "time": [
+                        "Mon",
+                        "Tue",
+                        "Wed",
+                        "Thu",
+                        "Fri"
+                    ],
+                    "img": "https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/3/p/h/-original-imagtapyyc6awuzq.jpeg?q=70",
+                    "url": "https://flipkart.com/boat-immortal-131-beast-mode-40-hours-playback-enx-tech-bluetooth-headset/p/itm3309321d253bd?pid=ACCGHJ97UDEBFFHD&lid=LSTACCGHJ97UDEBFFHDG1CFYU&marketplace=FLIPKART",
+                    "name": "boAt Immortal 131 with Beast Mode, 40 Hours Playback and ENx Tech Bluetooth Headset"
+                },
+                {
+                    "curr": "INR",
+                    "original": 5990,
+                    "prices": [
+                        1499,
+                        1599,
+                        1499,
+                        1499,
+                        1599
+                    ],
+                    "time": [
+                        "Mon",
+                        "Tue",
+                        "Wed",
+                        "Thu",
+                        "Fri"
+                    ],
+                    "img": "https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/8/2/m/-original-imagz5z5jshnhvrp.jpeg?q=70",
+                    "url": "https://flipkart.com/boat-airdopes-supreme-w-4-mics-ai-enx-tech-50-hrs-playback-multi-point-connectivity-bluetooth-headset/p/itm0ff5ec72d937f?pid=ACCGWU2AJHZCYMHR&lid=LSTACCGWU2AJHZCYMHRO2GON1&marketplace=FLIPKART",
+                    "name": "boAt Airdopes Supreme w/ 4 Mics AI ENx Tech, 50 HRS Playback,Multi Point Connectivity Bluetooth Headset"
+                }
+            ]
+        },
+        {
+            "category": "Protein Supplements",
+            "market": "Flipkart",
+            "product": [
+                {
+                    "curr": "INR",
+                    "original": 1999,
+                    "prices": [
+                        937,
+                        949,
+                        969,
+                        989,
+                        999
+                    ],
+                    "time": [
+                        "Mon",
+                        "Tue",
+                        "Wed",
+                        "Thu",
+                        "Fri"
+                    ],
+                    "img": "https://rukminim2.flixcart.com/image/612/612/xif0q/protein-supplement/n/p/q/creatine-platinum-100-creatine-scientifically-researched-to-original-imagjnvzh7vjneg4.jpeg?q=70",
+                    "url": "https://flipkart.com/muscletech-platinum-100-creatine-scientifically-researched-build-muscle-strength/p/itma8968ba81986b?pid=PSLGJNVWN54JKD4D&lid=LSTPSLGJNVWN54JKD4DAHOGJZ&marketplace=FLIPKART",
+                    "name": "Muscletech Platinum 100% Creatine Scientifically Researched to Build Muscle & Strength Creatine"
+                },
+                {
+                    "curr": "INR",
+                    "original": 4099,
+                    "prices": [
+                        2817,
+                        2899,
+                        2999,
+                        3099,
+                        3199
+                    ],
+                    "time": [
+                        "Mon",
+                        "Tue",
+                        "Wed",
+                        "Thu",
+                        "Fri"
+                    ],
+                    "img": "https://rukminim2.flixcart.com/image/612/612/xif0q/protein-supplement/u/f/o/-original-imagp8zen3dwpupt.jpeg?q=70",
+                    "url": "https://flipkart.com/muscletech-nitrotech-30g-protein-3g-creatine-monohydrate-ultimate-muscle-building-formula-whey-protein/p/itm0971552943711?pid=PSLGCW8PEFCS2PM4&lid=LSTPSLGCW8PEFCS2PM4EBXAA6&marketplace=FLIPKART",
+                    "name": "Muscletech NitroTech 30g Protein, 3g creatine monohydrate ultimate muscle building formula Whey Protein"
+                }
+            ]
+        },
+        {
+            "category": "Washing Machines",
+            "market": "Flipkart",
+            "product": [
+                {
+                    "curr": "INR",
+                    "original": 21500,
+                    "prices": [
+                        16999,
+                        17999,
+                        16999,
+                        16999,
+                        17999
+                    ],
+                    "time": [
+                        "Mon",
+                        "Tue",
+                        "Wed",
+                        "Thu",
+                        "Fri"
+                    ],
+                    "img": "https://rukminim2.flixcart.com/image/612/612/xlbnjrk0/washing-machine-new/k/q/w/whitemagic-royal-6-5-kg-10-yr-waranty-hd-quality-single-tone-ace-original-imafygd2gjcbjxgj.jpeg?q=70",
+                    "url": "https://flipkart.com/whirlpool-6-5-kg-5-star-fully-automatic-top-load-with-in-built-heater-whitemagic-royal-wine-10-yr-warranty/p/itm8ef2b55a0ba61?pid=WMNFJEXY9WPTZWWF&lid=LSTWMNFJEXY9WPTZWWF4TBB5J&marketplace=FLIPKART",
+                    "name": "Whirlpool 6.5 kg 5 Star Fully Automatic Top Load with In-built Heater Whitemagic Royal Wine 10 Yr Warranty"
+                },
+                {
+                    "curr": "INR",
+                    "original": 23890,
+                    "prices": [
+                        17999,
+                        18999,
+                        18999,
+                        18999,
+                        19999
+                    ],
+                    "time": [
+                        "Mon",
+                        "Tue",
+                        "Wed",
+                        "Thu",
+                        "Fri"
+                    ],
+                    "img": "https://rukminim2.flixcart.com/image/612/612/ki3gknk0-0/washing-machine-new/z/g/f/white-hw65-b10636nzp-haier-original-imafxh4yfhyggwwp.jpeg?q=70",
+                    "url": "https://flipkart.com/haier-6-5-kg-5-star-fully-automatic-top-load-gold-hw65-b10636nzp/p/itm1c6635041a5f3?pid=WMNFZZ6Z6WSAFBGW&lid=LSTWMNFZZ6Z6WSAFBGW0HUKD5&marketplace=FLIPKART",
+                    "name": "Haier 6.5 kg 5 Star Fully Automatic Top Load Gold"
+                }
+            ]
+        },
+        {
+            "category": "Laptops",
+            "market": "Flipkart",
+            "product": [
+                {
+                    "curr": "INR",
+                    "original": 56490,
+                    "prices": [
+                        49990,
+                        50990,
+                        50990,
+                        50990,
+                        51990
+                    ],
+                    "time": [
+                        "Mon",
+                        "Tue",
+                        "Wed",
+                        "Thu",
+                        "Fri"
+                    ],
+                    "img": "https://rukminim2.flixcart.com/image/612/612/kpz8t8w0/computer/y/k/s/na-gaming-laptop-asus-original-imag3vfzbggmsppg.jpeg?q=70",
+                    "url": "https://flipkart.com/asus-tuf-gaming-f15-core-i5-10th-gen-8-gb-512-gb-ssd-windows-10-home-4-graphics-nvidia-geforce-gtx-1650-144-hz-fx506li-hn271ts-laptop/p/itm9cd4760a92308?pid=COMG3VFZZWVZDADN&lid=LSTCOMG3VFZZWVZDADNOM8Q0A&marketplace=FLIPKART",
+                    "name": "ASUS TUF Gaming F15 Core i5 10th Gen - (8 GB/512 GB SSD/Windows 10 Home/4 GB Graphics/NVIDIA GeForce GTX 1650) FX506LI-HN271TS Gaming Laptop"
+                },
+                {
+                    "curr": "INR",
+                    "original": 104990,
+                    "prices": [
+                        94990,
+                        96990,
+                        96990,
+                        99990,
+                        99990
+                    ],
+                    "time": [
+                        "Mon",
+                        "Tue",
+                        "Wed",
+                        "Thu",
+                        "Fri"
+                    ],
+                    "img": "https://rukminim2.flixcart.com/image/612/612/kfzq8i80/computer/n/d/y/na-gaming-laptop-asus-original-imafwbhytfqvk8yp.jpeg?q=70",
+                    "url": "https://flipkart.com/asus-rog-strix-g17-ryzen-9-octa-core-5900hx-16-gb-1-tb-ssd-windows-10-home-8-graphics-nvidia-geforce-rtx-3070-g713qr-hg116t-gaming-laptop/p/itmc7d9f3a58f3fb?pid=COMGFXZNH9FHYXVW&lid=LSTCOMGFXZNH9FHYXVWKNTCFL&marketplace=FLIPKART",
+                    "name": "ASUS ROG Strix G17 Ryzen 9 Octa Core 5900HX - (16 GB/1 TB SSD/Windows 10 Home/8 GB Graphics/NVIDIA GeForce RTX 3070) G713QR-HG116T Gaming Laptop"
+                }
+            ]
+        },
+        {
+            "category": "Smartphones",
+            "market": "Flipkart",
+            "product": [
+                {
+                    "curr": "INR",
+                    "original": 17999,
+                    "prices": [
+                        14999,
+                        14999,
+                        15499,
+                        15499,
+                        15499
+                    ],
+                    "time": [
+                        "Mon",
+                        "Tue",
+                        "Wed",
+                        "Thu",
+                        "Fri"
+                    ],
+                    "img": "https://rukminim2.flixcart.com/image/612/612/kpodocw0/mobile/m/g/y/s20fe-narzo-30-128-gb-c43a-realme-original-imag3fgcgzfzmtkg.jpeg?q=70",
+                    "url": "https://flipkart.com/realme-narzo-30-5g-racing-silver-128-gb/p/itmba0bb4c6e7262?pid=MOBG3U5FRGYGGC5W&lid=LSTMOBG3U5FRGYGGC5WUTKSHG&marketplace=FLIPKART",
+                    "name": "realme narzo 30 5G (Racing Silver, 128 GB)"
+                },
+                {
+                    "curr": "INR",
+                    "original": 29999,
+                    "prices": [
+                        27999,
+                        27999,
+                        27999,
+                        28499,
+                        28999
+                    ],
+                    "time": [
+                        "Mon",
+                        "Tue",
+                        "Wed",
+                        "Thu",
+                        "Fri"
+                    ],
+                    "img": "https://rukminim2.flixcart.com/image/612/612/kpsnzww0/mobile/h/t/8/nord-2-5g-db2001-oneplus-original-imag3vz6gdggeugj.jpeg?q=70",
+                    "url": "https://flipkart.com/oneplus-nord-2-5g-green-woods-128-gb/p/itmb5fbfd6d7d3dc?pid=MOBG5NPG5XR8NXGQ&lid=LSTMOBG5NPG5XR8NXGQ1V4UI7&marketplace=FLIPKART",
+                    "name": "OnePlus Nord 2 5G (Green Woods, 128 GB)"
+                }
+            ]
+        }
+    ]
+}
