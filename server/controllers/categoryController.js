@@ -1,7 +1,7 @@
 const axios = require('axios');
 const Category = require('../models/categoryModel');
 const categoryData = require('../data/category.json');
-require('dotenv').config(); // Load environment variables from .env file
+require('dotenv').config(); 
 
 const FLIPKART_API=process.env.FLIPKART_API;
 class CategoryController {
