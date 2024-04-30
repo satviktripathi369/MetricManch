@@ -68,7 +68,7 @@ class CategoryController {
 
   async fetchByKey(req, res) {
     try {
-      const key = req.params.key.toLowerCase();
+      const key = req.params.key;
       const categoryData = require('../data/category.json');
       const categories = categoryData.field || [];
 
@@ -77,15 +77,10 @@ class CategoryController {
       }
 
       const data = await Category.findOne({ category: key });
-
       if (!data) {
         return res.status(404).json({ error: 'Data not found' });
       }
-
-      // Convert ISO date string to formatted date string
-      data.result.forEach(product => {
-        product.time = product.time.map(time => getFormattedToday(time));
-      });
+        
 
       res.status(200).json(data);
     } catch (error) {
