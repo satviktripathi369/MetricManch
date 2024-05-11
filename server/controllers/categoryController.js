@@ -41,6 +41,7 @@ class CategoryController {
 
       const apiUrl = `${FLIPKART_API}/search/${category}`;
       const response = await axios.get(apiUrl);
+      
 
       // Process and format data before storing
       const formattedResult = response.data.result.map(product => ({

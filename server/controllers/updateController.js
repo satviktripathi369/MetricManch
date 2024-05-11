@@ -2,6 +2,7 @@ const axios = require('axios');
 const Category = require('../models/categoryModel');
 const categoryData = require('../data/category.json');
 require('dotenv').config(); 
+const amazonScraper = require('amazon-buddy'); // Assuming you have a library for Amazon scraping
 
 const FLIPKART_API = process.env.FLIPKART_API;
 
@@ -36,10 +37,23 @@ async function updateDbForCategory() {
             const productResponse = await axios.get(`${FLIPKART_API}/${product.query_url}`);
 
             const latestCurrentPrice = productResponse.data.current_price;
-
+            console.log(product.asin)
             if (latestCurrentPrice) {
               product.current_price.push(latestCurrentPrice);
               product.time.push(getFormattedToday());
+              if(product.asin !== undefined ){
+                const product_by_asin = await amazonScraper.asin(
+                  { asin:product.asin , 
+                    country : 'IN'
+                  }
+                );
+                if(isNaN(product_by_asin.result[0].price.current_price)){
+                  console.log("Continue")
+                  continue;
+                }
+                product.current_price_az.push(Number(product_by_asin.result[0].price.current_price))
+                product.time_az.push(getFormattedToday());
+              }
             }
           }
 
