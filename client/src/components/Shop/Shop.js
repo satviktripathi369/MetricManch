@@ -12,7 +12,7 @@ const Shop = () => {
     const [womenItems, setWomenItems] = useState([]);
     const [kidsItems, setKidsItems] = useState([]);
     const [techItems, setTechItems] = useState([]);
-    const [booksItems, setBooksItems] = useState([]);
+    const [laptopItems, setLaptopItems] = useState([]);
     const [sportsItems, setSportsItems] = useState([]);
     const [kitchenItems, setKitchenItems] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -31,8 +31,8 @@ const Shop = () => {
                 const kidsResponse = await axios.get("https://clever-batsheva-upes-4b6f0e1a.koyeb.app/category/fetch/kids");
                 setKidsItems(kidsResponse.data.result.slice(0, 8));
 
-                const booksResponse = await axios.get("https://clever-batsheva-upes-4b6f0e1a.koyeb.app/category/fetch/Books");
-                setBooksItems(booksResponse.data.result.slice(0, 8));
+                const laptopResponse = await axios.get("https://clever-batsheva-upes-4b6f0e1a.koyeb.app/category/fetch/Laptop");
+                setLaptopItems(laptopResponse.data.result.slice(0, 8));
 
                 const sportsResponse = await axios.get("https://clever-batsheva-upes-4b6f0e1a.koyeb.app/category/fetch/Sports");
                 setSportsItems(sportsResponse.data.result.slice(0, 8));
@@ -61,7 +61,7 @@ const Shop = () => {
             {womenItems.length > 0 && <ShopCategory name="Women" key="women" items={womenItems} />}
             {kidsItems.length > 0 && <ShopCategory name="Kids" key="kids" items={kidsItems} />}
             {techItems.length > 0 && <ShopCategory name="Tech" key="tech" items={techItems} />}
-            {booksItems.length > 0 && <ShopCategory name="Books" key="books" items={booksItems} />}
+            {laptopItems.length > 0 && <ShopCategory name="Laptop" key="laptop" items={laptopItems} />}
             {sportsItems.length > 0 && <ShopCategory name="Sports" key="sports" items={sportsItems} />}
             {kitchenItems.length > 0 && <ShopCategory name="Kitchen" key="kitchen" items={kitchenItems} />}
         </div>

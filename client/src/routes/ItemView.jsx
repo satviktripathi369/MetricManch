@@ -17,7 +17,7 @@ const ProductView = () => {
             "https://clever-batsheva-upes-4b6f0e1a.koyeb.app/category/fetch/men",
             "https://clever-batsheva-upes-4b6f0e1a.koyeb.app/category/fetch/Women",
             "https://clever-batsheva-upes-4b6f0e1a.koyeb.app/category/fetch/kids",
-            "https://clever-batsheva-upes-4b6f0e1a.koyeb.app/category/fetch/Books",
+            "https://clever-batsheva-upes-4b6f0e1a.koyeb.app/category/fetch/Laptop",
             "https://clever-batsheva-upes-4b6f0e1a.koyeb.app/category/fetch/Sports",
             "https://clever-batsheva-upes-4b6f0e1a.koyeb.app/category/fetch/kitchen",
             "https://clever-batsheva-upes-4b6f0e1a.koyeb.app/category/fetch/Tech"
