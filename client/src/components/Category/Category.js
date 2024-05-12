@@ -1,6 +1,6 @@
 import './Category.css';
 import ItemCard from '../Card/ItemCard/ItemCard';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
@@ -68,7 +68,7 @@ const Category = (props) => {
                 </div>
                 <div className="category__card__container">
                     <div className="category__product__card">
-                        {props.items.map((data) => <ItemCard item={data} category={props.category} />)}
+                        {props.items.map((data) => <ItemCard key={data._id} item={data} category={props.category} />)}
                         <div className="show__more__action">
                             <Button variant='outlined' sx={[{ width: '200px', height: '50px', borderRadius: '20px', fontWeight: '700', backgroundColor: '#fff', borderColor: '#9842F1', color: 'black' }, { '&:hover': { borderColor: '#9842F1', backgroundColor: "#9842F1", color: "white" } }]}>Show more</Button>
                         </div>

@@ -43,13 +43,25 @@ function App() {
                 <Route path=":id" element={<CategoryView />} />
               </Route>
               <Route path="/item">
-                <Route path="/item/men">
+                <Route path="/item">
                   <Route path=":id" element={<ItemView />} />
                 </Route>
-                <Route path="/item/women">
+                <Route path="/item">
                   <Route path=":id" element={<ItemView />} />
                 </Route>
-                <Route path="/item/kids">
+                <Route path="/item">
+                  <Route path=":id" element={<ItemView />} />
+                </Route>
+                <Route path="/item">
+                  <Route path=":id" element={<ItemView />} />
+                </Route>
+                <Route path="/item">
+                  <Route path=":id" element={<ItemView />} />
+                </Route>
+                <Route path="/item">
+                  <Route path=":id" element={<ItemView />} />
+                </Route>
+                <Route path="/item">
                   <Route path=":id" element={<ItemView />} />
                 </Route>
                 <Route path="/item/featured">

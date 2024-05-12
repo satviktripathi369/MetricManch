@@ -12,7 +12,7 @@ import AddCircleIcon from '@mui/icons-material/AddCircle';
 import RemoveCircleIcon from '@mui/icons-material/RemoveCircle';
 
 const CartCard = (props) => {
-    let cartItems  = useContext(CartItemsContext)
+    let cartItems = useContext(CartItemsContext)
     const [size, setSize] = useState(props.item.size[0]);
 
     const handelQuantityIncrement = (event) => {
@@ -20,7 +20,7 @@ const CartCard = (props) => {
     };
 
     const handelQuantityDecrement = (event) => {
-        if(props.item.itemQuantity >1){
+        if (props.item.itemQuantity > 1) {
             cartItems.quantity(props.item.id, 'DEC');
         }
     };
@@ -37,7 +37,7 @@ const CartCard = (props) => {
         <div className='cart__item__card'>
             <div className="cart__item__detail">
                 <div className="cart__item__image">
-                    <img src={`https://shema-ecommerce.herokuapp.com/${props.item.category}/${props.item.image[0].filename}`} alt="item" className="item__image"/>
+                    <img src={`https://shema-ecommerce.herokuapp.com/${props.item.category}/${props.item.image[0].filename}`} alt="item" className="item__image" />
                 </div>
                 <div className="cart__item__name">{props.item.name}</div>
             </div>
@@ -47,31 +47,31 @@ const CartCard = (props) => {
                 </IconButton>
                 <div type="text" name="quantity" className="quantity__input">{props.item.itemQuantity}</div>
                 <IconButton onClick={handelQuantityDecrement}>
-                    <RemoveCircleIcon fontSize='medium'/>
+                    <RemoveCircleIcon fontSize='medium' />
                 </IconButton>
             </div>
             <div className="product size">
-                <Box sx={{ minWidth: 80} }>
+                <Box sx={{ minWidth: 80 }}>
                     <FormControl fullWidth size="small">
                         <InputLabel>Size</InputLabel>
                         <Select
-                        value={size}
-                        label="size"
-                        onChange={handleSizeChange}
+                            value={size}
+                            label="size"
+                            onChange={handleSizeChange}
                         >
-                        {props.item.size.map((size) => <MenuItem value={size}>{size}</MenuItem>)}
+                            {props.item.size.map((size) => <MenuItem value={size}>{size}</MenuItem>)}
                         </Select>
                     </FormControl>
                 </Box>
             </div>
-            <div className="cart__item__price">${props.item.price}</div>
+            <div className="cart__item__price">₹{props.item.price}</div>
             <div className="remove__item__icon">
                 <IconButton>
-                    <HighlightOffIcon onClick={handelRemoveItem}/>
+                    <HighlightOffIcon onClick={handelRemoveItem} />
                 </IconButton>
             </div>
         </div>
-     );
+    );
 }
- 
+
 export default CartCard;

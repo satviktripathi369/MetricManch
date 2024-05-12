@@ -183,3 +183,8 @@
     background-color: #000000d1;
 }
 
+Button:hover{
+    font-weight: 700;
+    color: #000000;
+}
+

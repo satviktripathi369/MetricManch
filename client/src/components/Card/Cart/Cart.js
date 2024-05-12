@@ -82,7 +82,7 @@ const Cart = () => {
                                 <div className="options">
                                     <div className="total__amount">
                                         <div className="total__amount__label">Total Amount:</div>
-                                        <div className="total__amount__value">${cartItems.totalAmount}.00</div>
+                                        <div className="total__amount__value">₹{cartItems.totalAmount}.00</div>
                                     </div>
                                     <div className="checkout">
                                         <Button variant="outlined" onClick={handleCheckout}>Checkout</Button>

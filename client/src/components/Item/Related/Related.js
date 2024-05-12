@@ -5,28 +5,53 @@ import RelatedCard from '../../Card/RelatedCard/RelatedCard';
 import './Related.css';
 
 const Related = (props) => {
-    const [menItems, setMenItems] = useState();
-    const [womenItems, setWomenItems] = useState();
-    const [kidsItems, setKidsItems] = useState();
+    const [items, setItems] = useState([]);
 
     useEffect(() => {
-        axios.get("https://shema-backend.vercel.app/api/items")
+        axios.get(`https://clever-batsheva-upes-4b6f0e1a.koyeb.app/category/fetch/men`)
             .then(res => {
-                setMenItems(res.data.filter((item) => item.category === "men"));
-                setKidsItems(res.data.filter((item) => item.category === "kids"));
-                setWomenItems(res.data.filter((item) => item.category === "women"));
+                if (Array.isArray(res.data)) {
+                    setItems(res.data);
+                } else {
+                    setItems([]); // Set items to an empty array if response is not an array
+                }
             })
             .catch(err => console.log(err));
-    }, []);
+    }, [props.category]);
 
     useEffect(() => {
         // Create Chart
         const ctx = document.getElementById('myChart').getContext('2d');
+
+        // Clear existing chart canvas
+        if (ctx) {
+            ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+        }
+
+        // Create new Chart instance
         new Chart(ctx, {
             type: 'line',
-            data: data,
+            data: {
+                labels: props.time,
+                datasets: [
+                    {
+                        label: 'Flipkart',
+                        data: props.current_price, // Use current_price data instead of static data
+                        fill: false,
+                        borderColor: 'rgb(75, 192, 192)',
+                        tension: 0.1
+                    },
+                    {
+                        label: 'Amazon',
+                        data: props.current_price_az, // Use current_price data instead of static data
+                        fill: false,
+                        borderColor: 'rgb(192, 75, 75)',
+                        tension: 0.1
+                    }
+                ]
+            },
         });
-    }, []);
+    }, [props.time, props.current_price]);
 
     return (
         <div className="related__products">
@@ -35,15 +60,13 @@ const Related = (props) => {
 
             <div className="related__header__container">
                 <div className="related__header">
-                    <h2>Recommended Products</h2>
+                    {/* <h2>Recommended Products</h2> */}
                 </div>
-                <div className="related__header__line"></div>
+                {/* <div className="related__header__line"></div> */}
             </div>
             <div className="related__card__container">
                 <div className="related__product__card">
-                    {menItems && props.category === "men" && menItems.map((item) => <RelatedCard key={item.id} item={item} />)}
-                    {womenItems && props.category === "women" && womenItems.map((item) => <RelatedCard key={item.id} item={item} />)}
-                    {kidsItems && props.category === "kids" && kidsItems.map((item) => <RelatedCard key={item.id} item={item} />)}
+                    {items.map((item) => <RelatedCard key={item.id} item={item} />)}
                 </div>
             </div>
         </div>
@@ -51,27 +74,3 @@ const Related = (props) => {
 }
 
 export default Related;
-
-const labels = ["Mon", "Tue", "Wed", "Thu", "Fri"];
-const prices1 = [1299, 1299, 1399, 1399, 1499]; // Prices corresponding to each day for line 1
-const prices2 = [999, 1099, 1299, 1599, 1899]; // Prices corresponding to each day for line 2
-
-const data = {
-    labels: labels,
-    datasets: [
-        {
-            label: 'Flipkart',
-            data: prices1, // Use prices data instead of static data
-            fill: false,
-            borderColor: 'rgb(75, 192, 192)',
-            tension: 0.1
-        },
-        {
-            label: 'Amazon',
-            data: prices2, // Use prices data instead of static data
-            fill: false,
-            borderColor: 'rgb(192, 75, 75)',
-            tension: 0.1
-        }
-    ]
-};

@@ -4,9 +4,9 @@ import Search from "../components/Search";
 const SearchView = () => {
     const param = useParams()
     console.log(param.query)
-    return ( 
+    return (
         <Search />
-     );
+    );
 }
- 
+
 export default SearchView;
