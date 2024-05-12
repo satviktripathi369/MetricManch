@@ -50,7 +50,7 @@ const CategoryView = () => {
                     {param.id === 'men' && <Category name="Men's Fashion" items={items} category="men" />}
                     {param.id === 'kids' && <Category name="Kids Fashion" items={items} category="kids" />}
                     {param.id === 'Women' && <Category name="Women's Fashion" items={items} category="Women" />}
-                    {param.id === 'Books' && <Category name="Books Fashion" items={items} category="books" />}
+                    {param.id === 'Laptop' && <Category name="Laptop Fashion" items={items} category="Laptop" />}
                     {param.id === 'Sports' && <Category name="Sports Fashion" items={items} category="sports" />}
                     {param.id === 'kitchen' && <Category name="Kitchen Fashion" items={items} category="kitchen" />}
                     {param.id === 'Tech' && <Category name="Technology" items={items} category="tech" />}

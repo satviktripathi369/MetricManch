@@ -11,7 +11,7 @@ const NavLinks = () => {
                     <li className='nav-link'><Link to="/category/men">Men</Link></li>
                     <li className='nav-link'><Link to="/category/Women">Women</Link></li>
                     <li className='nav-link'><Link to="/category/kids">Kids</Link></li>
-                    <li className='nav-link'><Link to="/category/Books">Books</Link></li>
+                    <li className='nav-link'><Link to="/category/Laptop">Laptop</Link></li>
                     <li className='nav-link'><Link to="/category/Sports">Sports</Link></li>
                     <li className='nav-link'><Link to="/category/kitchen">Kitchen</Link></li>
                     <li className='nav-link'><Link to="/category/Tech">Technology</Link></li>
