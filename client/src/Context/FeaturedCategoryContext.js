@@ -14,7 +14,7 @@ export const FeatureCategoryContext = createContext([
     {
         name: "Women's Fashion",
         image: womenFashion,
-        url: '/category/women',
+        url: '/category/Women',
         id: 2
     },
     {
@@ -22,5 +22,5 @@ export const FeatureCategoryContext = createContext([
         image: kidsFashion,
         url: '/category/kids',
         id: 3
-    }
+    },
 ])

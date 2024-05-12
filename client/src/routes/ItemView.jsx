@@ -1,31 +1,72 @@
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom'
-import axios from 'axios'
+import { useParams } from 'react-router-dom';
+import axios from 'axios';
 import ReactLoading from 'react-loading';
 import Item from '../components/Item/Item';
 
-const ProductView = (props) => {
-    const param = useParams()
-    const [ item, setItem ] = useState()
-    const [ loading, setLoading ] = useState(true)
+const ProductView = () => {
+    const param = useParams();
+    const [item, setItem] = useState(null);
+    const [category, setCategory] = useState(null); // State to store the category
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        window.scrollTo(0, 0)
-        axios.get("https://shema-backend.vercel.app/api/items")
-            .then(res => {
-                setItem(res.data.filter((item) => item._id === param.id))
-                setLoading(false)
-            })
-            .catch(err => console.log(err))
+        window.scrollTo(0, 0);
 
-    }, [param.id])
+        const categoryAPIs = [
+            "https://clever-batsheva-upes-4b6f0e1a.koyeb.app/category/fetch/men",
+            "https://clever-batsheva-upes-4b6f0e1a.koyeb.app/category/fetch/Women",
+            "https://clever-batsheva-upes-4b6f0e1a.koyeb.app/category/fetch/kids",
+            "https://clever-batsheva-upes-4b6f0e1a.koyeb.app/category/fetch/Books",
+            "https://clever-batsheva-upes-4b6f0e1a.koyeb.app/category/fetch/Sports",
+            "https://clever-batsheva-upes-4b6f0e1a.koyeb.app/category/fetch/kitchen",
+            "https://clever-batsheva-upes-4b6f0e1a.koyeb.app/category/fetch/Tech"
+        ];
+
+        const fetchData = async () => {
+            for (const categoryAPI of categoryAPIs) {
+                try {
+                    const response = await axios.get(`${categoryAPI}`);
+                    const data = response.data;
+                    if (data && Array.isArray(data.result) && param && param.id) {
+                        const foundItem = data.result.find(item => item._id === param.id);
+                        if (foundItem) {
+                            setItem(foundItem);
+                            setCategory(data.category); // Extract category from the response
+                            setLoading(false);
+                            return;
+                        }
+                    }
+                } catch (error) {
+                    console.log(`Error fetching data from ${categoryAPI}`, error);
+                }
+            }
+
+            // If item is not found in any category
+            setLoading(false);
+            // Handle error: Show a friendly error message to the user or take appropriate action
+        };
+
+        fetchData();
+    }, [param.id]);
     
+
     return (
+        <>
             <div className="d-flex min-vh-100 w-100 justify-content-center align-items-center m-auto">
-                {loading && <ReactLoading type="balls" color='#FFE26E' height={100} width={100} className='m-auto'/>}
-                {item && <Item item={item[0]}/>}
+                {loading && <ReactLoading type="balls" color='#FFE26E' height={100} width={100} className='m-auto' />}
+                {item && category && <Item 
+                            name={item.name} 
+                            thumbnail={item.thumbnail} 
+                            current_price={item.current_price}
+                            description={item.description}
+                            time={item.time}
+                            link={item.link}
+                            category={category} // Pass the category prop
+                        />}
             </div>
-     );
+        </>
+    );
 }
- 
+
 export default ProductView;

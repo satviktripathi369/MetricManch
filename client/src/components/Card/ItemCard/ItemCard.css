@@ -7,11 +7,16 @@
     border-width: 1px;
     box-shadow: 0px 2px 6px -3px;
     border-radius: 5px;
+    transition: 0.2s ease-in-out;
 }
 
 .product__card {
     height: 100%;
     width: 100%;
+}
+
+.product__card__card:hover {
+    transform: scale(110%);
 }
 
 .product__image {
@@ -24,6 +29,10 @@
     justify-content: center;
     align-items: center;
 }
+
+/* .product__image:hover img {
+    transform: scale(70%);
+} */
 
 .product__image > img{
     max-width: 100%;

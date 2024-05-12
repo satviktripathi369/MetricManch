@@ -9,16 +9,16 @@ const Description = (props) => {
             </div>
             <div className="description__detail__container">
                 <div className="description__detail">
-                    <p>{props.item.details}</p>
+                    <p>{props.description}</p>
                 </div>
             </div>
             <div className="description__specifics__container">
                 <div className="description__specifics">
                     <div className="description__header__line"></div>
-                    <div className="description__highlights__header">Highlights</div>
+                    {/* <div className="description__highlights__header">Highlights</div>
                     <ul>
                         {props.item.highlights.map((highlight) => <li>{highlight}</li>)}
-                    </ul>
+                    </ul> */}
                 </div>
             </div>
         </div>
