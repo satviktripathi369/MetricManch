@@ -43,7 +43,7 @@ const Related = (props) => {
                     },
                     {
                         label: 'Amazon',
-                        data: prices2, // Use current_price data instead of static data
+                        data: props.current_price_az, // Use current_price data instead of static data
                         fill: false,
                         borderColor: 'rgb(192, 75, 75)',
                         tension: 0.1
@@ -74,5 +74,3 @@ const Related = (props) => {
 }
 
 export default Related;
-
-const prices2 = [1899, 1899, 1899, 1899, 2000, 2000, 2000, 2099, 2100, 2099, 2000, 1999]; // Prices corresponding to each day for line 2

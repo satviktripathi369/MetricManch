@@ -28,6 +28,7 @@ const ProductView = () => {
                 try {
                     const response = await axios.get(`${categoryAPI}`);
                     const data = response.data;
+                    console.log(data)
                     if (data && Array.isArray(data.result) && param && param.id) {
                         const foundItem = data.result.find(item => item._id === param.id);
                         if (foundItem) {
@@ -62,7 +63,10 @@ const ProductView = () => {
                             description={item.description}
                             time={item.time}
                             link={item.link}
-                            category={category} // Pass the category prop
+                            category={category}
+                            current_price_az={item.current_price_az}
+                            time_az={item.time_az}
+                            query_az_url={item.query_az_url}
                         />}
             </div>
         </>

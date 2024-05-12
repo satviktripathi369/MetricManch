@@ -15,14 +15,9 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 
 const Detail = (props) => {
     const [quantity, setQuantity] = useState(1);
-    // const [size, setSize] = useState(props.item.size[0]);
 
     const cartItems = useContext(CartItemsContext);
     const wishItems = useContext(WishItemsContext);
-
-    // const handleSizeChange = (event) => {
-    //     setSize(event.target.value);
-    // };
 
     const handleQuantityIncrement = () => {
         setQuantity((prevQuantity) => prevQuantity + 1);
@@ -43,8 +38,11 @@ const Detail = (props) => {
     };
 
     const handleBuyNow = () => {
-        // Add logic to route to props.link
         window.location.href = props.link;
+    };
+
+    const handleBuyNowTwo = () => {
+        window.location.href = props.query_az_url;
     };
 
     return (
@@ -65,70 +63,37 @@ const Detail = (props) => {
                                 <RemoveCircleIcon fontSize="medium" />
                             </IconButton>
                         </div>
-
-                        <div className="product size">
-                            <Box sx={{ minWidth: 100 }}>
-                                <FormControl fullWidth size="small">
-                                    {/* <InputLabel>Size</InputLabel>
-                                    <Select
-                                        value={size}
-                                        label="Size"
-                                        onChange={handleSizeChange}
-                                    >
-                                        {props.item.size.map((size) => (
-                                            <MenuItem key={size} value={size}>{size}</MenuItem>
-                                        ))}
-                                    </Select> */}
-                                </FormControl>
-                            </Box>
+                        <div className="add__wish">
+                            <IconButton
+                                variant="outlined"
+                                size="large"
+                                onClick={handleAddToWish}
+                            >
+                                <FavoriteBorderIcon />
+                            </IconButton>
                         </div>
                     </div>
+                    
                     <div className="collect__item__actions">
-                        <div className="add__cart__add__wish">
-                            <div className="add__cart">
-                                <Button
-                                    variant="outlined"
-                                    size="large"
-                                    sx={{
-                                        '&:hover': {
-                                            backgroundColor: '#FFE26E',
-                                            borderColor: '#FFE26E',
-                                            borderWidth: '3px',
-                                            color: 'black',
-                                        },
-                                        minWidth: 200,
-                                        borderColor: 'black',
-                                        backgroundColor: 'black',
-                                        color: '#FFE26E',
-                                        borderWidth: '3px',
-                                    }}
-                                    onClick={handleBuyNow} // Change onClick event to handleBuyNow
-                                >
-                                    Buy Now {/* Change button text to "Buy Now" */}
-                                </Button>
-                            </div>
-                            <div className="add__wish">
-                                <IconButton
-                                    variant="outlined"
-                                    size="large"
-                                    sx={{
-                                        '&:hover': {
-                                            backgroundColor: '#FFE26E',
-                                            borderColor: '#FFE26E',
-                                            borderWidth: '3px',
-                                            color: 'black',
-                                        },
-                                        borderColor: 'black',
-                                        backgroundColor: 'black',
-                                        color: '#FFE26E',
-                                        borderWidth: '3px',
-                                    }}
-                                    onClick={handleAddToWish}
-                                >
-                                    <FavoriteBorderIcon sx={{ width: '22px', height: '22px' }} />
-                                </IconButton>
-                            </div>
+                        <div className="add__cart">
+                            <Button
+                                variant="outlined"
+                                size="large"
+                                onClick={handleBuyNow}
+                                sx={{ marginRight: '10px', backgroundColor: 'black', color: '#FFE26E' }}
+                            >
+                                Buy from Flipkart
+                            </Button>
+                            <Button
+                                variant="outlined"
+                                size="large"
+                                onClick={handleBuyNowTwo}
+                                sx={{ marginRight: '10px', backgroundColor: 'black', color: '#FFE26E' }}
+                            >
+                                Buy from Amazon
+                            </Button>
                         </div>
+                        
                     </div>
                 </form>
             </div>
