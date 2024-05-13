@@ -13,6 +13,12 @@ const ProductCarousel = (props) => {
               <img className="carousel__image" src={props.thumbnail} alt="item" />
             </div>
           </Carousel.Item>
+          <Carousel.Item>
+            <div className="carousel__image__container">
+              {/* Use props.thumbnail as the source for the image */}
+              <img className="carousel__image" src={props.az_thumbnail} alt="item" />
+            </div>
+          </Carousel.Item>
         </Carousel>
       </div>
     </div>
