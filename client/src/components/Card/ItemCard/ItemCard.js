@@ -20,6 +20,10 @@ const ItemCard = (props) => {
         cartItemsContext.addItem(props.item, 1);
     };
 
+    // Splitting product name and selecting first four words
+    const splitName = props.item.name.split(" ").slice(0, 4).join(" ");
+    const truncatedName = props.item.name.split(" ").length > 5 ? splitName + "..." : props.item.name;
+
     return (
         <div className="product__card__card">
             <div className="product__card">
@@ -38,7 +42,7 @@ const ItemCard = (props) => {
                                 }
                             }}
                         >
-                            {props.item.name}
+                            {truncatedName}
                         </Link>
                     </div>
                     <div className="product__price">

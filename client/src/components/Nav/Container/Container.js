@@ -10,7 +10,7 @@ const Navtop = () => {
             <div className="top__container">
                 <NavBrand />
                 <div className="form__container">
-                    <Form />
+                    {/* <Form /> */}
                 </div>
                 <div className="control__bar">
                     <Control />

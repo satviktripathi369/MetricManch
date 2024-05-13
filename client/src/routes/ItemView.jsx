@@ -67,6 +67,7 @@ const ProductView = () => {
                             current_price_az={item.current_price_az}
                             time_az={item.time_az}
                             query_az_url={item.query_az_url}
+                            az_thumbnail={item.az_thumbnail}
                         />}
             </div>
         </>

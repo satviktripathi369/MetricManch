@@ -1,11 +1,12 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
-import Chart from 'chart.js/auto'; // Import Chart.js
+import Chart from 'chart.js/auto';
 import RelatedCard from '../../Card/RelatedCard/RelatedCard';
 import './Related.css';
 
 const Related = (props) => {
     const [items, setItems] = useState([]);
+    const chartRef = useRef(null);
 
     useEffect(() => {
         axios.get(`https://clever-batsheva-upes-4b6f0e1a.koyeb.app/category/fetch/men`)
@@ -20,38 +21,59 @@ const Related = (props) => {
     }, [props.category]);
 
     useEffect(() => {
+        if (chartRef.current !== null) {
+            // Destroy existing chart instance if it exists
+            chartRef.current.destroy();
+        }
+
         // Create Chart
         const ctx = document.getElementById('myChart').getContext('2d');
 
-        // Clear existing chart canvas
-        if (ctx) {
-            ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
-        }
-
         // Create new Chart instance
-        new Chart(ctx, {
+        const chart = new Chart(ctx, {
             type: 'line',
             data: {
                 labels: props.time,
                 datasets: [
                     {
                         label: 'Flipkart',
-                        data: props.current_price, // Use current_price data instead of static data
+                        data: props.current_price,
                         fill: false,
                         borderColor: 'rgb(75, 192, 192)',
                         tension: 0.1
                     },
                     {
                         label: 'Amazon',
-                        data: props.current_price_az, // Use current_price data instead of static data
+                        data: props.current_price_az,
                         fill: false,
                         borderColor: 'rgb(192, 75, 75)',
                         tension: 0.1
                     }
                 ]
             },
+            options: {
+                scales: {
+                    y: {
+                        ticks: {
+                            callback: function(value, index, values) {
+                                return '₹' + value;
+                            }
+                        }
+                    }
+                }
+            }
         });
-    }, [props.time, props.current_price]);
+
+        // Save chart reference to be able to destroy it later
+        chartRef.current = chart;
+
+        return () => {
+            // Cleanup chart instance when component unmounts
+            if (chartRef.current !== null) {
+                chartRef.current.destroy();
+            }
+        };
+    }, [props.time, props.current_price, props.current_price_az]);
 
     return (
         <div className="related__products">

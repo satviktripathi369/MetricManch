@@ -82,7 +82,7 @@ const Detail = (props) => {
                                 onClick={handleBuyNow}
                                 sx={{ marginRight: '10px', backgroundColor: 'black', color: '#FFE26E' }}
                             >
-                                Buy from Flipkart
+                                Buy from Flipkart (₹{props.price})
                             </Button>
                             <Button
                                 variant="outlined"
@@ -90,7 +90,7 @@ const Detail = (props) => {
                                 onClick={handleBuyNowTwo}
                                 sx={{ marginRight: '10px', backgroundColor: 'black', color: '#FFE26E' }}
                             >
-                                Buy from Amazon
+                                Buy from Amazon (₹{props.current_price_az})
                             </Button>
                         </div>
                         

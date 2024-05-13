@@ -5,7 +5,7 @@ import Detail from './Detail/Detail';
 import './Item.css';
 import Related from './Related/Related';
 
-const Item = ({ name, thumbnail, current_price, description, time, link, category, current_price_az, time_az, query_az_url}) => {
+const Item = ({ name, thumbnail, current_price, description, time, link, category, current_price_az, time_az, query_az_url, az_thumbnail}) => {
     // Log the name, thumbnail, and current_price
     console.log("Name:", name);
     console.log("Thumbnail:", thumbnail);
@@ -23,8 +23,8 @@ const Item = ({ name, thumbnail, current_price, description, time, link, categor
     return (
         <div className="item__container">
             <div className="detail__and__carousel__container">
-                <ItemCarousel thumbnail={thumbnail} />
-                <Detail name={name} price={current_price[current_price.length - 1]} link={link} query_az_url={query_az_url}/>
+                <ItemCarousel thumbnail={thumbnail} az_thumbnail={az_thumbnail}/>
+                <Detail name={name} price={current_price[current_price.length - 1]} current_price_az={current_price_az[current_price_az.length - 1]} link={link} query_az_url={query_az_url} />
             </div>
             <div className="item__description__container">
                 <Description 
