@@ -54,6 +54,7 @@ const CategoryView = () => {
                     {param.id === 'Sports' && <Category name="Sports Fashion" items={items} category="sports" />}
                     {param.id === 'kitchen' && <Category name="Kitchen Fashion" items={items} category="kitchen" />}
                     {param.id === 'Tech' && <Category name="Technology" items={items} category="tech" />}
+                    {param.id === 'mobile' && <Category name="Mobile" items={items} category="mobile" />}
                 </>
             )}
         </div>

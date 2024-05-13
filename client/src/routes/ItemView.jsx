@@ -20,7 +20,8 @@ const ProductView = () => {
             "https://clever-batsheva-upes-4b6f0e1a.koyeb.app/category/fetch/Laptop",
             "https://clever-batsheva-upes-4b6f0e1a.koyeb.app/category/fetch/Sports",
             "https://clever-batsheva-upes-4b6f0e1a.koyeb.app/category/fetch/kitchen",
-            "https://clever-batsheva-upes-4b6f0e1a.koyeb.app/category/fetch/Tech"
+            "https://clever-batsheva-upes-4b6f0e1a.koyeb.app/category/fetch/Tech",
+            "https://clever-batsheva-upes-4b6f0e1a.koyeb.app/category/fetch/mobile"
         ];
 
         const fetchData = async () => {

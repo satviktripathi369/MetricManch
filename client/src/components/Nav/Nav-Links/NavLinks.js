@@ -15,7 +15,7 @@ const NavLinks = () => {
                     <li className='nav-link'><Link to="/category/Sports">Sports</Link></li>
                     <li className='nav-link'><Link to="/category/kitchen">Kitchen</Link></li>
                     <li className='nav-link'><Link to="/category/Tech">Technology</Link></li>
-
+                    <li className='nav-link'><Link to="/category/mobile">Mobile</Link></li>
                 </ul>
             </div>
         </nav>
