@@ -1,0 +1,190 @@
+{
+	"info": {
+		"_postman_id": "1184ca85-e5d2-4bf4-9414-9b739ea4bfb5",
+		"name": "MetricManch",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26811368",
+		"_collection_link": "https://www.postman.com/orbital-module-engineer-11493836/workspace/postman-api-fundamentals-student-expert/collection/26811368-1184ca85-e5d2-4bf4-9414-9b739ea4bfb5?action=share&source=collection_link&creator=26811368"
+	},
+	"item": [
+		{
+			"name": "fetchAndStore",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/category/search/mobile",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"category",
+						"search",
+						"mobile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FetchFlipkartApi",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4444/search/Laptop",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"search",
+						"Laptop"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FetchProductFlipkartApi",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4444/search/Laptop",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"search",
+						"Laptop"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FetchFromDbApi",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8001/category/fetch/men",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"category",
+						"fetch",
+						"men"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateDB",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/update/updateDB",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"update",
+						"updateDB"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "serachFromFlipkart",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4444/product/set-2-fundamentals-geography-principles-indian-english-1st-edition-upsc-cse-prelims-mains-study-iq/p/itm49cba1990cba3",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"product",
+						"set-2-fundamentals-geography-principles-indian-english-1st-edition-upsc-cse-prelims-mains-study-iq",
+						"p",
+						"itm49cba1990cba3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FetchFromAmazon",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api?product=B0C6HTPJZC",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api"
+					],
+					"query": [
+						{
+							"key": "product",
+							"value": "B0C6HTPJZC"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "integrateAmazon",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/integrateAmazon",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"integrateAmazon"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "integrateAmazonCategory",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/integrateAmazon/books",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"integrateAmazon",
+						"books"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
