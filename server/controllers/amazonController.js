@@ -19,6 +19,11 @@ function getFormattedToday() {
   }
   
 class AmazonController {
+
+  async integrateAmazonKey(req, res) {
+    const key=req.params.key;
+    console.log(key);
+  }
   async integrateAmazon(req, res) {
     try {
       // Fetch all categories from the database
