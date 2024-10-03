@@ -1,55 +1,61 @@
-# MERN Ecommerce Application
+<div align='center'>
 
-<code>Currently under construction for additional features</code>
 
-# Description
+![MetricManch](https://github.com/user-attachments/assets/3ee73c26-19f3-4e36-b9c7-8b4767a687ec)
 
-Full-stack ecommerce application built with MERN stack. This project has two features:
 
-1. Buyers register and browse the marketplace while interacting with products across different categories.
-2. Admins control and manage the marketplace items and customer acounts.
+</div>
 
-# Getting Started
+### About the Project
+> Metric Manch is an online platform designed to streamline product price comparisons from popular e-commerce websites like Amazon and Flipkart. By using web scraping and APIs, it provides real-time updates on product pricing, availability, and seller details, allowing users to make informed purchasing decisions. The platform offers personalized features, such as tagging and tracking specific products, setting price thresholds, and receiving alerts when products meet desired criteria. Metric Manch empowers users to save time and money, whether they are budget-conscious shoppers or busy individuals seeking a more efficient online shopping experience.
 
-## Dependencies
+### Tech Stack
 
-- Nodejs - The runtime environment of the application
-- Reactjs - Component based UI library
-- MongoDB - NoSQL database
-- Expressjs - Framework to handle routes and requests
-- Mongoose - MongoDB object modeling tool to model the database schema
+![Static Badge](https://img.shields.io/badge/AWS-101010?logo=amazonwebservices&logoColor=%232496ED) ![Static Badge](https://img.shields.io/badge/Python-101010?logo=python) ![Static Badge](https://img.shields.io/badge/S3-101010?logo=amazons3)![Static Badge](https://img.shields.io/badge/IAM-101010?logo=amazoniam) ![Static Badge](https://img.shields.io/badge/ReactJS-101010?logo=react&logoColor=%2361DAFB) ![](https://img.shields.io/badge/Nodejs-101010?logo=nodedotjs) ![](https://img.shields.io/badge/Expressjs-101010?logo=express) ![](https://img.shields.io/badge/MongoDB-101010?logo=mongodb) ![Static Badge](https://img.shields.io/badge/HTML-101010?logo=html5&logoColor=%23E34F26) ![Static Badge](https://img.shields.io/badge/JavaScript-101010?logo=javascript&logoColor=%23F7DF1E)  ![Static Badge](https://img.shields.io/badge/CSS-101010?logo=css3&logoColor=%231572B6) ![Static Badge](https://img.shields.io/badge/Tailwind-101010?logo=tailwindcss)![Static Badge](https://img.shields.io/badge/Vercel-101010?logo=Vercel) ![](https://img.shields.io/badge/Koyeb-101010?logo=koyeb) ![](https://img.shields.io/badge/AWS%20ECS-101010?logo=amazonecs) ![](https://img.shields.io/badge/AWS%20Fargate-101010?logo=awsfargate) ![](https://img.shields.io/badge/Docker-101010?logo=docker) 
 
-## Installation
 
-After you cloned the repository do not start the application. To run the application fully you need to create a database and collection and provide your own database URI.
+### Architecture 
 
-### Setup
+![metricmanchsynopsis](https://github.com/user-attachments/assets/d0785132-e076-4bcb-9b7d-b8165aacd1bd)
 
-- Go to MongoDB website and create a database and a collection named 'Items' and insert the data in the <code>server/ItemsCollection.js</code> file as a document.
-- Create a .env file in the server folder and type the following
+### Contributing
 
+1. Fork the Project
+2. Clone your forked repository
+
+```sh
+ git clone https://github.com/<your_github_username>/FASAL-FUSION.git
 ```
-    NODE_ENV = development
-    PORT = 5000
-    MONGO_URI = mongodb+srv://<your uri from mongodb website>
-```
+3. Now go ahead and create a new branch and move to the branch
+   ```sh
+   git checkout -b fix-issue-<ISSUE-NUMBER>
+   ```
+4. After you have added your changes, follow the following command chain
+   * Check the changed files
+    ```sh
+     git status -s
+     ```
 
-### Running
-
-After this you can run the project locally:
-
-- To run the front end
-  - <code>cd client</code>
-  - <code>npm start</code>
-- To run the back end
-  - <code>cd server</code>
-  - <code>npm run dev</code>
-    TIP: Run both in split terminal so that you can see both ends running
-
-# Languages and tools
-
-- [Node](https://nodejs.org)
-- [React](https://reactjs.org/)
-- [Expressjs](https://expressjs.com)
-- [Mongoose](https://mongoosejs.com)
-- [Material UI](https://mui.com/)
+   * Add all the files to the staging area
+      ```sh
+     git add .
+     ```
+     or
+     ```sh
+     git add <file_name1> <file_name2>
+     ```
+   * Commit your changes
+    ```sh
+     git commit -m "<EXPLAIN-YOUR_CHANGES>"
+     ```
+5. Push your changes
+   ```sh
+   git push origin fix-issue-<ISSUE-NUMBER>
+   ```
+6. Open a Pull Request 
+>
+> * Wait for the PR to be reviewed and merged.
+>
+> * Happy Coding!
+<br />
+<!-- <img src='https://repobeats.axiom.co/api/embed/198d5c5deedcd2c0779883bb05f1b33b2f320ca7.svg' alt="Repobeats analytics image" /> -->
