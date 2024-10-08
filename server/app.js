@@ -21,11 +21,13 @@ connectDB();
 app.use('/category', categoryRoutes);
 app.use('/update', updateRoutes);
 app.use('/integrateAmazon',integrateAmazonRoutes)
-  cron.schedule(scheduleTimeEightHr, () => {
-    console.log('Running updateDb job...');
-    UpdateController.updateDbForCategory();
-    console.log('Done running updateDb job');
-  });
+
+
+cron.schedule(scheduleTimeEightHr, () => {
+  console.log('Running updateDb job...');
+  UpdateController.updateDbForCategory();
+  console.log('Done running updateDb job');
+});
 
   
 app.listen(PORT, () => {
