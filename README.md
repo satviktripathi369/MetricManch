@@ -7,7 +7,7 @@
 </div>
 
 ### About the Project
-> Metric Manch is an online platform designed to streamline product price comparisons from popular e-commerce websites like Amazon and Flipkart. By using web scraping and APIs, it provides real-time updates on product pricing, availability, and seller details, allowing users to make informed purchasing decisions. The platform offers personalized features, such as tagging and tracking specific products, setting price thresholds, and receiving alerts when products meet desired criteria. Metric Manch empowers users to save time and money, whether they are budget-conscious shoppers or busy individuals seeking a more efficient online shopping experience.
+> Metric Manch is an online platform designed to streamline product price comparisons from popular e-commerce websites like Amazon and Flipkart. By using web scraping and APIs, it provides regular updates on product pricing, availability, and seller details, allowing users to make informed purchasing decisions. Metric Manch empowers users to save time and money, whether they are budget-conscious shoppers or busy individuals seeking a more efficient online shopping experience.
 
 ### Tech Stack
 
