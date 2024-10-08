@@ -24,7 +24,7 @@
 2. Clone your forked repository
 
 ```sh
- git clone https://github.com/<your_github_username>/FASAL-FUSION.git
+ git clone https://github.com/<your_github_username>/MetricManch.git
 ```
 3. Now go ahead and create a new branch and move to the branch
    ```sh
@@ -58,4 +58,4 @@
 >
 > * Happy Coding!
 <br />
-<!-- <img src='https://repobeats.axiom.co/api/embed/198d5c5deedcd2c0779883bb05f1b33b2f320ca7.svg' alt="Repobeats analytics image" /> -->
+<img src='https://repobeats.axiom.co/api/embed/13cfacc055568f06d3c6ba90ac712115e3359e4c.svg' alt="Repobeats analytics image" />
